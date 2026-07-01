@@ -1,0 +1,17 @@
+USE ContosoEnterpriseDW;
+GO
+
+CREATE SCHEMA dbo;
+GO
+
+CREATE SCHEMA staging;
+GO
+
+CREATE SCHEMA dimension;
+GO
+
+CREATE SCHEMA fact;
+GO
+
+CREATE SCHEMA audit;
+GO
