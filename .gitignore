@@ -1,0 +1,30 @@
+# Power BI
+*.pbix
+*.pbit
+*.cache
+
+# Build
+bin/
+obj/
+
+# VS
+.vs/
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temporary
+*.tmp
+
+# Power BI local cache
+**/.pbi/
+
+# Python
+__pycache__/
+
+# Node
+node_modules/
