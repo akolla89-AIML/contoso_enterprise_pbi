@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "git.autofetch": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "markdown.preview.breaks": true
+}
