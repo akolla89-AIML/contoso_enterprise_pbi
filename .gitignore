@@ -28,3 +28,19 @@ __pycache__/
 
 # Node
 node_modules/
+
+# Visual Studio
+.vs/
+
+# Build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# SQL Server
+*.dbmdl
+
+*.jfm
