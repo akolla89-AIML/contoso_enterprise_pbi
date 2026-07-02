@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sqlproj: Build ContosoEnterpriseDW",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"c:/Users/sowmy/OneDrive/Desktop/ak_projects/contoso_enterprise_pbi/SQL/DatabaseProject/ContosoEnterpriseDW/ContosoEnterpriseDW/ContosoEnterpriseDW.sqlproj"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Builds the ContosoEnterpriseDW SQL project"
+		}
+	]
+}
