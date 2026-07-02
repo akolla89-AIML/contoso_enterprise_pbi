@@ -1,3 +1,10 @@
+/*
+==========================================================
+Database : ContosoEnterpriseDW
+Purpose  : Enterprise Data Warehouse
+Author   : Abhilash K
+==========================================================
+*/
 USE ContosoEnterpriseDW;
 GO
 

@@ -2,7 +2,7 @@
 ==========================================================
 Database : ContosoEnterpriseDW
 Purpose  : Enterprise Data Warehouse
-Author   : Abhilash Kolla
+Author   : Abhilash K
 ==========================================================
 */
 
