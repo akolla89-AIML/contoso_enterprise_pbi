@@ -57,6 +57,8 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Schemas" />
+    <Folder Include="Tables" />
+    <Folder Include="Tables\dimension" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
@@ -67,5 +69,6 @@
     <Build Include="Schemas\fact.sql" />
     <Build Include="Schemas\metdata.sql" />
     <Build Include="Schemas\staging.sql" />
+    <Build Include="Tables\dimension\DimDate.sql" />
   </ItemGroup>
 </Project>
