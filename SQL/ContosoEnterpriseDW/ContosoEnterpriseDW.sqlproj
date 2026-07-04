@@ -70,6 +70,7 @@
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
     <None Include="Scripts\PostDeployment\SeedStagingProduct.sql" />
+    <None Include="Scripts\PostDeployment\SeedSourceSystem.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\dimension.sql" />
@@ -85,6 +86,7 @@
     <Build Include="StoredProcedures\usp_LoadDimProduct.sql" />
     <Build Include="Tables\audit\ETLExecutionLog.sql" />
     <Build Include="Tables\metadata\ETLBatch.sql" />
+    <Build Include="Tables\metadata\SourceSystem.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />

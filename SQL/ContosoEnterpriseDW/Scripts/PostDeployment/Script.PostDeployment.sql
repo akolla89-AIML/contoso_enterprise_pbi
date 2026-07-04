@@ -11,3 +11,4 @@ Post-Deployment Script Template
 */
 :r .\SeedDimDate.sql
 :r .\SeedStagingProduct.sql
+:r .\SeedSourceSystem.sql
