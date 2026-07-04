@@ -31,12 +31,12 @@ BEGIN
         -- Execute ETL Procedures
         ---------------------------------------------------------
 
-        EXEC dbo.usp_LoadDimProduct;
+        EXEC dbo.usp_LoadDimProduct
+            @ETLBatchKey = @BatchKey;
 
         ---------------------------------------------------------
-        -- Mark Success
+        -- Complete Batch
         ---------------------------------------------------------
-
         UPDATE metadata.ETLBatch
         SET
             BatchEndTime = SYSUTCDATETIME(),
@@ -47,6 +47,9 @@ BEGIN
 
     BEGIN CATCH
 
+        ---------------------------------------------------------
+        -- Mark Batch Failed
+        ---------------------------------------------------------
         UPDATE metadata.ETLBatch
         SET
             BatchEndTime = SYSUTCDATETIME(),
