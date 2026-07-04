@@ -71,6 +71,7 @@
     <None Include="Local.publish.publish.xml" />
     <None Include="Scripts\PostDeployment\SeedStagingProduct.sql" />
     <None Include="Scripts\PostDeployment\SeedSourceSystem.sql" />
+    <None Include="Scripts\PostDeployment\SeedStagingCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\dimension.sql" />
