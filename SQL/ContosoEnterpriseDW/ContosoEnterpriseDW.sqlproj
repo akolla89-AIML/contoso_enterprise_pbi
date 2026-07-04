@@ -65,6 +65,7 @@
     <Folder Include="Tables\staging" />
     <Folder Include="StoredProcedures" />
     <Folder Include="Tables\audit" />
+    <Folder Include="Tables\metadata" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
@@ -83,6 +84,7 @@
     <Build Include="Tables\staging\Product.sql" />
     <Build Include="StoredProcedures\usp_LoadDimProduct.sql" />
     <Build Include="Tables\audit\ETLExecutionLog.sql" />
+    <Build Include="Tables\metadata\ETLBatch.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
