@@ -87,6 +87,7 @@
     <Build Include="Tables\audit\ETLExecutionLog.sql" />
     <Build Include="Tables\metadata\ETLBatch.sql" />
     <Build Include="Tables\metadata\SourceSystem.sql" />
+    <Build Include="StoredProcedures\usp_RunETLBatch.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
