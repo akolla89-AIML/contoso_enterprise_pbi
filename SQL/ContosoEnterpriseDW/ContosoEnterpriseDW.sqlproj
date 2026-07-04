@@ -74,6 +74,7 @@
     <Build Include="Schemas\staging.sql" />
     <Build Include="Tables\dimension\DimDate.sql" />
     <None Include="Scripts\PostDeployment\SeedDimDate.sql" />
+    <Build Include="Tables\dimension\DimProduct.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
