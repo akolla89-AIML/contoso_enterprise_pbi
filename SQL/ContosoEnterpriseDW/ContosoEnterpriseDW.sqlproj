@@ -62,6 +62,7 @@
     <Folder Include="Scripts" />
     <Folder Include="Scripts\PostDeployment" />
     <Folder Include="Scripts\PreDeployment" />
+    <Folder Include="Tables\staging" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
@@ -75,6 +76,7 @@
     <Build Include="Tables\dimension\DimDate.sql" />
     <None Include="Scripts\PostDeployment\SeedDimDate.sql" />
     <Build Include="Tables\dimension\DimProduct.sql" />
+    <Build Include="Tables\staging\Product.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
