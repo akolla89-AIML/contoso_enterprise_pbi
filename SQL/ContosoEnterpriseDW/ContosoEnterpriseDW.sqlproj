@@ -59,6 +59,9 @@
     <Folder Include="Schemas" />
     <Folder Include="Tables" />
     <Folder Include="Tables\dimension" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\PostDeployment" />
+    <Folder Include="Scripts\PreDeployment" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
@@ -70,5 +73,9 @@
     <Build Include="Schemas\metdata.sql" />
     <Build Include="Schemas\staging.sql" />
     <Build Include="Tables\dimension\DimDate.sql" />
+    <None Include="Scripts\PostDeployment\SeedDimDate.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
   </ItemGroup>
 </Project>
