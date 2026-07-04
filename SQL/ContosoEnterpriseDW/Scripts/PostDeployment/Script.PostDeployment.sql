@@ -13,3 +13,4 @@ Post-Deployment Script Template
 :r .\SeedStagingProduct.sql
 :r .\SeedSourceSystem.sql
 :r .\SeedStagingCustomer.sql
+:r .\SeedStagingStore.sql
