@@ -64,6 +64,7 @@
     <Folder Include="Scripts\PreDeployment" />
     <Folder Include="Tables\staging" />
     <Folder Include="StoredProcedures" />
+    <Folder Include="Tables\audit" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
@@ -77,10 +78,11 @@
     <Build Include="Schemas\staging.sql" />
     <Build Include="Tables\dimension\DimDate.sql" />
     <None Include="Scripts\PostDeployment\SeedDimDate.sql" />
-	<None Include="Scripts\PostDeployment\SeedStagingProduct.sql" />
+    <None Include="Scripts\PostDeployment\SeedStagingProduct.sql" />
     <Build Include="Tables\dimension\DimProduct.sql" />
     <Build Include="Tables\staging\Product.sql" />
     <Build Include="StoredProcedures\usp_LoadDimProduct.sql" />
+    <Build Include="Tables\audit\ETLExecutionLog.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
