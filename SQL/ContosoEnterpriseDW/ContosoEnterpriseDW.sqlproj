@@ -91,6 +91,7 @@
     <Build Include="StoredProcedures\usp_RunETLBatch.sql" />
     <Build Include="Tables\dimension\DimCustomer.sql" />
     <Build Include="Tables\staging\Customer.sql" />
+    <Build Include="StoredProcedures\usp_LoadDimCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
