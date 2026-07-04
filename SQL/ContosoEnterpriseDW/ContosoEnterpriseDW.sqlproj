@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
+    <None Include="Scripts\PostDeployment\SeedStagingProduct.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\dimension.sql" />

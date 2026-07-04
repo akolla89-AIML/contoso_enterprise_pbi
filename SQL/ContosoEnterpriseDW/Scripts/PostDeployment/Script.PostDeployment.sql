@@ -10,3 +10,4 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 :r .\SeedDimDate.sql
+:r .\SeedStagingProduct.sql
