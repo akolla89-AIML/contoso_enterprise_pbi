@@ -3,10 +3,9 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-    -----------------------------------------------------------------
-    -- Insert new products
-    -----------------------------------------------------------------
-
+    ------------------------------------------------------------
+    -- Insert New Products
+    ------------------------------------------------------------
     INSERT INTO [dimension].[DimProduct]
     (
         ProductAlternateKey,
@@ -38,6 +37,35 @@ BEGIN
         FROM dimension.DimProduct d
         WHERE d.ProductAlternateKey = s.ProductAlternateKey
     );
+
+    ------------------------------------------------------------
+    -- Update Existing Products (Type 1 SCD)
+    ------------------------------------------------------------
+    UPDATE d
+    SET
+        d.ProductName = s.ProductName,
+        d.ProductCategory = s.ProductCategory,
+        d.ProductSubcategory = s.ProductSubcategory,
+        d.Brand = s.Brand,
+        d.Color = s.Color,
+        d.Size = s.Size,
+        d.StandardCost = s.StandardCost,
+        d.ListPrice = s.ListPrice,
+        d.IsActive = s.IsActive,
+        d.ModifiedDate = SYSUTCDATETIME()
+    FROM dimension.DimProduct d
+    INNER JOIN staging.Product s
+        ON d.ProductAlternateKey = s.ProductAlternateKey
+    WHERE
+           ISNULL(d.ProductName, '') <> ISNULL(s.ProductName, '')
+        OR ISNULL(d.ProductCategory, '') <> ISNULL(s.ProductCategory, '')
+        OR ISNULL(d.ProductSubcategory, '') <> ISNULL(s.ProductSubcategory, '')
+        OR ISNULL(d.Brand, '') <> ISNULL(s.Brand, '')
+        OR ISNULL(d.Color, '') <> ISNULL(s.Color, '')
+        OR ISNULL(d.Size, '') <> ISNULL(s.Size, '')
+        OR ISNULL(d.StandardCost, 0) <> ISNULL(s.StandardCost, 0)
+        OR ISNULL(d.ListPrice, 0) <> ISNULL(s.ListPrice, 0)
+        OR ISNULL(d.IsActive, 0) <> ISNULL(s.IsActive, 0);
 
 END;
 GO
