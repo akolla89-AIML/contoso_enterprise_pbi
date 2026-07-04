@@ -66,6 +66,7 @@
     <Folder Include="StoredProcedures" />
     <Folder Include="Tables\audit" />
     <Folder Include="Tables\metadata" />
+    <Folder Include="Tables\fact" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
@@ -96,6 +97,7 @@
     <Build Include="Tables\dimension\DimStore.sql" />
     <Build Include="Tables\staging\Store.sql" />
     <Build Include="StoredProcedures\usp_LoadDimStore.sql" />
+    <Build Include="Tables\fact\FactSales.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
