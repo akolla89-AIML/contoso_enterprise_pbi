@@ -106,6 +106,7 @@
     <Build Include="Views\vwDailySales.sql" />
     <Build Include="Views\vwProductSales.sql" />
     <Build Include="Views\vwCustomerSales.sql" />
+    <Build Include="Views\vwStoreSales.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
