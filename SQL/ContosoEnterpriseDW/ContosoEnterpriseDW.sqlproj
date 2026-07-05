@@ -103,6 +103,7 @@
     <Build Include="Tables\staging\Sales.sql" />
     <Build Include="StoredProcedures\usp_LoadFactSales.sql" />
     <Build Include="Views\vwSales.sql" />
+    <Build Include="Views\vwDailySales.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
