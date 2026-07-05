@@ -35,6 +35,12 @@
 
     CONSTRAINT PK_FactSales
         PRIMARY KEY CLUSTERED (SalesKey),
+CONSTRAINT UQ_FactSales_OrderLine
+UNIQUE
+(
+    SalesOrderNumber,
+    SalesOrderLineNumber
+),
 
     CONSTRAINT FK_FactSales_DimDate
         FOREIGN KEY (DateKey)

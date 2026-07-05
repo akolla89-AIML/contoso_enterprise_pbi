@@ -39,6 +39,9 @@ BEGIN
 
         EXEC dbo.usp_LoadDimStore
             @ETLBatchKey = @BatchKey;
+
+        EXEC dbo.usp_LoadFactSales
+            @ETLBatchKey = @BatchKey;
         ---------------------------------------------------------
         -- Complete Batch
         ---------------------------------------------------------
