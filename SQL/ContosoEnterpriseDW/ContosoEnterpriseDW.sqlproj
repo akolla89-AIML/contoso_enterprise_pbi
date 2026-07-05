@@ -68,6 +68,7 @@
     <Folder Include="Tables\metadata" />
     <Folder Include="Tables\fact" />
     <Folder Include="Views" />
+    <Folder Include="Indexes" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
@@ -107,6 +108,7 @@
     <Build Include="Views\vwProductSales.sql" />
     <Build Include="Views\vwCustomerSales.sql" />
     <Build Include="Views\vwStoreSales.sql" />
+    <Build Include="Indexes\CreateIndexes.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
