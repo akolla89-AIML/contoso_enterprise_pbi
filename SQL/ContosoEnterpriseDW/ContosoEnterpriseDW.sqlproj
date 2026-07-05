@@ -100,6 +100,7 @@
     <Build Include="StoredProcedures\usp_LoadDimStore.sql" />
     <Build Include="Tables\fact\FactSales.sql" />
     <Build Include="Tables\staging\Sales.sql" />
+    <Build Include="StoredProcedures\usp_LoadFactSales.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
