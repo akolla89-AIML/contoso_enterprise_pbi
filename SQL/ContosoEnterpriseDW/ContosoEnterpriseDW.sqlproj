@@ -67,6 +67,7 @@
     <Folder Include="Tables\audit" />
     <Folder Include="Tables\metadata" />
     <Folder Include="Tables\fact" />
+    <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.publish.xml" />
@@ -101,6 +102,7 @@
     <Build Include="Tables\fact\FactSales.sql" />
     <Build Include="Tables\staging\Sales.sql" />
     <Build Include="StoredProcedures\usp_LoadFactSales.sql" />
+    <Build Include="Views\vwSales.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment\Script.PostDeployment.sql" />
