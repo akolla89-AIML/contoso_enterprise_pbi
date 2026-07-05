@@ -74,6 +74,7 @@
     <None Include="Scripts\PostDeployment\SeedSourceSystem.sql" />
     <None Include="Scripts\PostDeployment\SeedStagingCustomer.sql" />
     <None Include="Scripts\PostDeployment\SeedStagingStore.sql" />
+    <None Include="Scripts\PostDeployment\SeedStagingSales.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\dimension.sql" />
